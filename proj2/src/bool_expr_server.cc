@@ -74,7 +74,7 @@ void BoolExprServer::Run() {
               << "B sent, " << static_cast<int>(bytes_read)
               << "B received" << std::endl;
 
-    signal(SIGPIPE, SIG_IGN);
+    //signal(SIGPIPE, SIG_IGN);
     close(client_fd);
     std::cout << "Client disconnected" << std::endl;
   }
